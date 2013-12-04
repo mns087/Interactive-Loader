@@ -1,0 +1,52 @@
+<html>
+<head>
+<script src="jquery-1.9.1.js"></script>
+<script src="../jquery.interactiveLoader.min.js"></script>
+<style>
+* { 
+	margin:0;
+	padding:0
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+.results {
+    background-color: grey; 
+    width: 50%; 
+    height: 500px; 
+}
+</style>
+
+<script>
+$(function () {
+    $("#show").click(function () {
+        
+        /*Example 1 */
+        
+        $.intLoader({appendTo: ".results", duration: 10});
+        
+        /*Example 2 */
+        /*
+        $.intLoader();
+        */
+        
+        /*Example 3 */
+        /*
+        $.intLoader({appendTo: ".results", duration: 1, loop: true, content: ['Please wait 1', 'Please wait 2'],defaultStyle: true, image: 'ajax-loader.gif', fixedTop: 100, width: 300});
+        */
+    });
+
+    $("#hide").click(function () {
+        $.intLoader.hide();
+    });
+});
+</script>
+</head>
+
+<body>
+    <div class="results"></div>
+    <input type="button" id="show" value="show loader">
+    <input type="button" id="hide" value="hide loader">
+</body>
+</html>
