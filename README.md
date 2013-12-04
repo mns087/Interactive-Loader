@@ -1,8 +1,11 @@
-Interactive-Loader
+Interactive Loader - Jquery Plugin
 ==================
-Plugin Name: Interactive Loader
-	Author: Monis Raza(mns087@gmail.com)
-	Version: 1.0
+Description: Jquery Plugin to show loading modal with loading image and interactive messages to keep the user busy on the loading screen. 
+***
+Author: Monis Raza(mns087@gmail.com),
+***
+Version: 1.0
+
 	
 	Note: For simplicity and plug-n-play, css/images/lang are pre-included in this file. These can be overridden ofcourse.
 	
