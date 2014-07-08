@@ -30,7 +30,7 @@
 	Please report any feedback/bugs at mns087@gmail.com
 **/
 (function ($) {
-    var interval, identifier = 'intloader';
+    var interval, identifier = 'intloader'; //global vars
     $.intLoader = function (options) {
 
         //ensures that only one loader is displayed on the page at a time
@@ -38,7 +38,7 @@
             return;
         }
 
-        //local variables
+        //local variables are set here
         var i = 0,
             el,
             mask,
